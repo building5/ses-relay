@@ -1,5 +1,10 @@
 # ses-relay
 
+## Supported tags and respective `Dockerfile` links
+
+-	[`latest`, `1`, `1.0`, `1.0.1` (*Dockerfile*)](https://github.com/building5/ses-relay/blob/v1.0/Dockerfile)
+-	[`devel` (*Dockerfile*)](https://github.com/building5/ses-relay/blob/master/Dockerfile)
+
 A [Docker][] container designed to work well as an SMTP relay for [SES][]. If
 you provide it with an `SMTP_USERNAME` and `SMTP_PASSWORD`, and run it on an
 EC2 instance, it will automagically relay any emails it receives to the SES
@@ -59,7 +64,7 @@ This uses [exim][] as the SMTP relay, but that is just an implementation detail
 that shouldn't affect the usage of the container.
 
  [Docker]: https://www.docker.com/
- [SES]: http://docs.aws.amazon.com/ses/latest/DeveloperGuide/Welcome.html
- [ses-password]: http://docs.aws.amazon.com/ses/latest/DeveloperGuide/smtp-credentials.html
+ [SES]: https://docs.aws.amazon.com/ses/latest/DeveloperGuide/Welcome.html
+ [ses-password]: https://docs.aws.amazon.com/ses/latest/DeveloperGuide/smtp-credentials.html
  [Docker network]: https://docs.docker.com/articles/networking/
  [exim]: http://www.exim.org/
